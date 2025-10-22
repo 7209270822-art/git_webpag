@@ -1,6 +1,6 @@
 ---
 title: "diseños experimentales"
-author: "Maicelo Luis"
+author: "Maicelo Villanueva Luis Miguel"
 format: html
 ---
 
@@ -34,6 +34,7 @@ Factor → dosis de fertilización nitrogenada (kg/ha) 0 ~ testigo 50 100 Diseñ
 
 ```{r}
 library(agricolae)
+
 # Definición de los tratamientos (factor: dosis de fertilización nitrogenada)
 tratamientos <- c("0", "50", "100")
 
@@ -48,6 +49,12 @@ diseño <- design.crd(
 # Visualización del diseño generado
 print(diseño)
 ```
+
+```{r}
+# Exportación de la tabla del diseño
+diseño$book
+```
+
 ## DBCA
 
 DBCA en factorial
